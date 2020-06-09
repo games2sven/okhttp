@@ -47,7 +47,7 @@ public class ConnectionPool {
     private static ThreadFactory threadFactory = new ThreadFactory() {
         @Override
         public Thread newThread(Runnable runnable) {
-            Thread result = new Thread(runnable, "DNHttpClient ConnectionPool");
+            Thread result = new Thread(runnable, "HGHttpClient ConnectionPool");
             result.setDaemon(true);
             return result;
         }
